@@ -7,6 +7,7 @@
     <TestVsolt v-slot="{ changeValue }">
       <input type="text" :value="changeValue" />
     </TestVsolt>
+    <AttrTest></AttrTest>
   </div>
 </template>
 
@@ -15,7 +16,8 @@
 import TestJsxProps from "./pages/test-jsx-props";
 import TestJsxAttrs from "./pages/test-jsx-attrs";
 import TestTemplateProps from "./pages/template-props";
-import TestVsolt from "./pages/test-v-slot.vue";
+import TestVsolt from "./pages/test-v-slot";
+import AttrTest from "./pages/attr-test";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     TestJsxAttrs,
     TestTemplateProps,
     TestVsolt,
+    AttrTest,
   },
 };
 </script>

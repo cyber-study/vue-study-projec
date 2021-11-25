@@ -1,24 +1,20 @@
-# vue-form-test-demo
+# 学习总结
 
-## Project setup
-```
-npm install
-```
+## v-slot
+v-slot 等价于 react 的 render-props 模式
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 属性透传
 
-### Compiles and minifies for production
-```
-npm run build
+默认情况下子组件会自动继承来自父组件的属性
+在子组件中这样设置就可以取消这个行为(这个选项不影响 class 和 style 绑定,class 和 style依然会合并进来)
+```js
+export default {
+  inheritAttrs: false,
+};
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 尚存的疑问
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+自定义组件的根元素会继承父级传递的class和style属性并跟自己的class和style合并
+
+## fallthrough(隐式贯穿)
