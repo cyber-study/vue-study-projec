@@ -41,5 +41,18 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## v-slot v-slot 等价于 react 的 render-props 模式",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyber-study/vue-study-projec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyber-study/vue-study-projec/issues"
+  },
+  "homepage": "https://github.com/cyber-study/vue-study-projec#readme"
 }

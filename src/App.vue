@@ -8,6 +8,7 @@
       <input type="text" :value="changeValue" />
     </TestVsolt>
     <AttrTest></AttrTest>
+    <TestVon @click="handleClick"></TestVon>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import TestJsxAttrs from "./pages/test-jsx-attrs";
 import TestTemplateProps from "./pages/template-props";
 import TestVsolt from "./pages/test-v-slot";
 import AttrTest from "./pages/attr-test";
+import TestVon from "./pages/test-von";
 
 export default {
   name: "App",
@@ -27,6 +29,12 @@ export default {
     TestTemplateProps,
     TestVsolt,
     AttrTest,
+    TestVon,
+  },
+  methods: {
+    handleClick() {
+      alert("父组件的click回调");
+    },
   },
 };
 </script>
